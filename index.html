@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="step-progress-container">
+        <div class="step-progress">
+            <div class="step-progress-line" style="width: 0%;"></div>
+        </div>
+        <div class="step-progress">
+            <div class="step-progress-line" style="width: 0%;"></div>
+        </div>
+    </div>
+    <div class="screen screen_access hidden">
+        <div class="block_access">
+            <span>
+                Разрешить доступ <br>
+                к камере?
+            </span>
+            <div class="btn-group">
+                <div class="btn btn-primary" ontouchstart>Да</div>
+                <div class="btn btn-second" ontouchstart>Нет</div>
+            </div>
+        </div>
+    </div>
+    <div class="screen screen_how hidden">
+        <div class="img_bg">
+            <div class="arrow_content">
+                <div class="arrow_icon"></div>
+                <div class="arrow_icon"></div>
+                <div class="arrow_icon"></div>
+                <div class="arrow_icon"></div>
+            </div>
+            <div class="hand"></div>
+            <div class="eye"></div>
+        </div>
+
+        <div class="how-content">
+            <div class="screen_title">
+                Как использовать AR
+            </div>
+            <div class="how_bottom">
+                <div class="btn btn_linear" ontouchstart>Перейти к просмотру</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

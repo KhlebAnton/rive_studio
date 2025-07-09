@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./fonts/AvenirNextCyr-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./fonts/AvenirNextCyr-Bold.ttf');
+    font-weight: 700;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    font-family: 'Avenir Next';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #051F4A;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(210.3deg, #E75FD0 6.7%, #00A3E0 46.36%, #CDEEFE 97.36%);
+
+}
+.screen {
+    position: fixed;
+    display: flex;
+    padding: 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: opacity .3s ease;
+}
+.screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.step-progress-container {
+    position: fixed;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.step-progress {
+    flex-grow: 1;
+    display: flex;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: #ffffff7c;
+
+}
+
+.step-progress-line {
+    height: 100%;
+    border-radius: 50px;
+    background: #FFFFFF;
+    transition: all .3s ease;
+
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 18px;
+    border-radius: 5px;
+    transition: transform .3s ease;
+}
+.btn:active {
+    transform: scale(.95);
+}
+.btn-primary {
+    background: #0A7CC1;
+    color: #FFFFFF;
+
+}
+.btn-second {
+    border: 1px solid #051F4A;
+}
+.block_access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin:  auto;
+    padding: 60px 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 295px;
+    width: 100%;
+}
+.btn-group {
+    display: flex;
+    gap: 24px;
+}
+.how-content {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 10.6vh;
+    padding-bottom: 11.7vh;
+}
+.img_bg {
+    position: absolute;
+    z-index: -1;
+    left: 20px;
+    max-width: 354px;
+    margin: 0 auto;
+    right: 20px;
+    top: 3.81vh;
+    aspect-ratio: 1/ 1.774;
+    background: url('./img/Uled.png') 50% / contain no-repeat;
+}
+.screen_title {
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    font-size: 28px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.btn_linear {
+    padding: 14px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    color: #FFFFFF;
+    background: linear-gradient(245.79deg, #04B6F8 8.65%, #E75FD0 90.3%);
+
+}
+.arrow_content {
+    position: absolute;
+    left:0;
+    right:0;
+    aspect-ratio: 1 / 1;
+    top: 23%;
+    z-index: -1;
+   
+    pointer-events: none;
+    
+}
+.arrow_icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url('./img/arrow_circle_up.svg') 50% / contain no-repeat;
+}
+.arrow_icon:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow_icon:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)  rotate(-90deg);
+}
+.arrow_icon:nth-child(3) {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%)  rotate(90deg);
+}
+.arrow_icon:nth-child(4) {
+    bottom:  0;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+.hand {
+    width: 119px;
+    height: 80px;
+    background: url('./img/pinch_zoom_out.svg') 50% /contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -30%);
+}
+.eye {
+    width: 164px;
+    height: 74px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('./img/Union.svg') 50% / contain no-repeat;
+}

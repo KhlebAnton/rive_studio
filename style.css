@@ -109,18 +109,21 @@ html {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding-top: 10.6vh;
-    padding-bottom: 11.7vh;
+    max-height: 702px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .img_bg {
     position: absolute;
     z-index: -1;
     left: 20px;
     max-width: 354px;
-    margin: 0 auto;
     right: 20px;
-    top: 3.81vh;
-    aspect-ratio: 1/ 1.774;
+    top: 36px;
+    height: 100%;
+    max-height: 628px;
+    bottom: 100px;
+    margin: auto;
     background: url('./img/Uled.png') 50% / contain no-repeat;
 }
 .screen_title {
